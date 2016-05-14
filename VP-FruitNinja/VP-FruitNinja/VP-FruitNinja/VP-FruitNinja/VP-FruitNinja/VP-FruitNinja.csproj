@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDED8403-2681-42BC-AC4A-F2DC39A4DEE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VP_FruitNinja</RootNamespace>
+    <AssemblyName>VP-FruitNinja</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOver.Designer.cs">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="play.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="play.Designer.cs">
+      <DependentUpon>play.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="play.resx">
+      <DependentUpon>play.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-1-cut-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-1-cut-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-2-cut-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-2-cut-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-3-cut-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-3-cut-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-4-cut-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-4-cut-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-5-cut-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit-5-cut-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruitninja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hrum_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papyrus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wildtextures-wooden-chopping-board-texture1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knife_oyJ_icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit_ninja.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Classic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenSeiMix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fruit_Ninja_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenSeiSlice.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
